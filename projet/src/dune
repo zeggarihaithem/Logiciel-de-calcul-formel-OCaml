@@ -1,0 +1,10 @@
+(env (_ (flags :standard -w -27-26-32-33)))
+
+(executable
+ (name calc)
+ (modes byte exe)
+ (libraries graphics))
+
+(ocamllex (modules lexer))
+
+(menhir (modules parser))
